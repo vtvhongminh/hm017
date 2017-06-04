@@ -33,7 +33,7 @@ public class ModulProduct {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("sai o day");
+			
 		}
 	}
 
@@ -51,7 +51,7 @@ public class ModulProduct {
 			items.add(fds);
 			
 			for (Product product : item) {
-				System.out.println("kt inside add rong" + product );
+				// System.out.Println("kt inside add rong" + product );
 			}
 			SwingShow.showaftersort(items);
 	
@@ -67,7 +67,7 @@ public class ModulProduct {
 			item.add(fds);
 			
 			for (Product product : item) {
-				System.out.println("kt inside add k rong" + product );
+				// System.out.Println("kt inside add k rong" + product );
 			}
 			SwingShow.showaftersort(item);
 		}
@@ -80,14 +80,14 @@ public class ModulProduct {
 		int count = 1;
 		if (item.isEmpty()) {
 			for (Product ik : items) {
-				System.out.println(count++);
-				System.out.println(ik);
+				// System.out.Println(count++);
+				// System.out.Println(ik);
 			}
 
 		} else if (!item.isEmpty()) {
 			for (Product ik : item) {
-				System.out.println(count++);
-				System.out.println(ik);
+				// System.out.Println(count++);
+				// System.out.Println(ik);
 			}
 
 		}
@@ -99,7 +99,7 @@ public class ModulProduct {
 			SwingShow.ShowData(t, item);
 			for (Product ik : item) {
 
-				System.out.println("swing: " + ik);
+				// System.out.Println("swing: " + ik);
 			}
 		} else if (item.isEmpty()) {
 			item = items;
@@ -107,7 +107,7 @@ public class ModulProduct {
 			SwingShow.ShowData(t, item);
 			for (Product ik : items) {
 
-				System.out.println("swing: " + ik);
+				// System.out.Println("swing: " + ik);
 			}
 		}
 
@@ -130,8 +130,8 @@ public class ModulProduct {
 			} else
 				Json.writeList(f, item);
 
-			System.out.println("save to file " + item);
-			System.out.println("Saved");
+			// System.out.Println("save to file " + item);
+			// System.out.Println("Saved");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -149,7 +149,7 @@ public class ModulProduct {
 					t.addMany(product.pcode);
 				}
 				boolean r = t.search(s); // thay the bang swing
-				 System.out.println("Tim 17: " + r);
+				 // System.out.Println("Tim 17: " + r);
 				if (r == true) {
 					for (Product ik : item) {
 						if (ik.getPcode().equals(s)) { // thay the bang
@@ -177,10 +177,10 @@ public class ModulProduct {
 					}
 					itemSearch.add(fs);
 				}
-				 System.out.println("Tim 17: " + r);
+				 // System.out.Println("Tim 17: " + r);
 			}
 			SwingShow.showaftersort(itemSearch);
-			System.out.println(itemSearch);
+			// System.out.Println(itemSearch);
 		}
 		
 		 
@@ -213,7 +213,7 @@ public class ModulProduct {
 
 					if (string.equals(ik.pcode)) {
 						f = ik;
-						System.out.println("delete by code " + f);
+						// System.out.Println("delete by code " + f);
 					}
 
 				}
@@ -229,7 +229,7 @@ public class ModulProduct {
 
 					if (string.equals(ik.pcode)) {
 						f = ik;
-						System.out.println("delete by code items " + f);
+						// System.out.Println("delete by code items " + f);
 
 					}
 
@@ -242,7 +242,7 @@ public class ModulProduct {
 		}
 
 		for (Product string : item) {
-			System.out.println("sau khi xoa: " + string);
+			// System.out.Println("sau khi xoa: " + string);
 		}
 		SwingShow.showaftersort(item);
 	}
@@ -251,18 +251,18 @@ public class ModulProduct {
 	public void sortByPcode() {
 		if (item.isEmpty()) {
 			for (Product product : items) {
-				System.out.println("dung chay vao day");
+				// System.out.Println("dung chay vao day");
 				t.addMany(product.pcode);
 			}
 		} else if (!item.isEmpty()) {
 			
 			for (Product product : item) {
-				System.out.println("Chay vao sortbycode : " + product);
+				// System.out.Println("Chay vao sortbycode : " + product);
 				t.addMany(product.pcode);
 			}
 		}
 
-		System.out.println("day la sort");
+		// System.out.Println("day la sort");
 		t.collect(new TreeSet<String>());
 
 	}
@@ -278,8 +278,8 @@ public class ModulProduct {
 					for (Product product : items) {
 						
 						if (product.pcode.equals(string)) {
-							System.out.println("among get sort : " + product.pcode);
-							System.out.println("among get sort : " + string);
+							// System.out.Println("among get sort : " + product.pcode);
+							// System.out.Println("among get sort : " + string);
 							f = product;
 							 break;
 
@@ -289,7 +289,7 @@ public class ModulProduct {
 					itemSearch.add(f);
 				}
 				for (Product pd : itemSearch) {
-					System.out.println("sau khi sort cua items :" + pd);
+					// System.out.Println("sau khi sort cua items :" + pd);
 				}
 			} else if (!item.isEmpty()) {
 				for (Object string : list) {
@@ -297,7 +297,7 @@ public class ModulProduct {
 					for (Product product : item) {
 
 						if (string.equals(product.pcode)) {
-							System.out.println("strong sort cua item :" + string);
+							// System.out.Println("strong sort cua item :" + string);
 							f = product;
 							 break;
 							
@@ -307,7 +307,7 @@ public class ModulProduct {
 					 itemSearch.add(f);
 				}
 				for (Product pd : itemSearch) {
-					System.out.println("sau khi sort cua item :" + pd);
+					// System.out.Println("sau khi sort cua item :" + pd);
 				}
 			}
 		}

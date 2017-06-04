@@ -256,7 +256,6 @@ public class SwingShow {
 	public static void showaftersort(List<Product> tt){
 		model.setRowCount(0);
 		for (Product p : tt) {
-			
 			model.addRow(new Object[] { p.pcode, p.pro_name, p.price,p.sale,p.quantity, p.pro_image_url });
 		}
 	}

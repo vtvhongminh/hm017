@@ -224,7 +224,7 @@ public class SwingShowCus {
 	public static void showaftersort(List<Customer> tt){
 		model.setRowCount(0);
 		for (Customer ps : tt) {
-			System.out.println("ben swing : " + ps);
+			// System.out.Println("ben swing : " + ps);
 			model.addRow(new Object[] { ps.ccode, ps.cus_name, ps.phone });
 		}
 	}

@@ -222,14 +222,14 @@ public class SwingShowOrder {
 	public static void showaftersort(List<Ordering> tt) {
 		model.setRowCount(0);
 		for (Ordering ps : tt) {
-			System.out.println("ben swing : " + ps);
+			// System.out.Println("ben swing : " + ps);
 			model.addRow(new Object[] { ps.pcode, ps.ccode, ps.quantity });
 		}
 	}
 	public static void showaftersorts(List<Ordering> tt) {
 		model.setRowCount(0);
 		for (Ordering ps : tt) {
-			System.out.println("ben swing : " + ps);
+			// System.out.Println("ben swing : " + ps);
 			model.addRow(new Object[] { ps.pcode, ps.ccode, ps.quantity });
 		}
 	}

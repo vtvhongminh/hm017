@@ -32,7 +32,7 @@ public class ModulCus {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("sai o day");
+			//System.out.println("sai o day");
 		}
 	}
 
@@ -74,14 +74,14 @@ public class ModulCus {
 		int count = 1;
 		if (item.isEmpty()) {
 			for (Customer ik : items) {
-				System.out.println(count++);
-				System.out.println(ik);
+			//	System.out.println(count++);
+			//	System.out.println(ik);
 			}
 
 		} else if (!item.isEmpty()) {
 			for (Customer ik : item) {
-				System.out.println(count++);
-				System.out.println(ik);
+		//		System.out.println(count++);
+			//	System.out.println(ik);
 			}
 
 		}
@@ -93,7 +93,7 @@ public class ModulCus {
 			SwingShowCus.ShowData(t, item);
 			for (Customer ik : item) {
 
-				System.out.println("swing: " + ik);
+				//System.out.println("swing: " + ik);
 			}
 		} else if (item.isEmpty()) {
 			item = items;
@@ -101,7 +101,7 @@ public class ModulCus {
 			SwingShowCus.ShowData(t, item);
 			for (Customer ik : items) {
 
-				System.out.println("swing: " + ik);
+				//System.out.println("swing: " + ik);
 			}
 		}
 
@@ -143,7 +143,7 @@ public class ModulCus {
 					tc.addMany(Customer.ccode);
 				}
 				boolean r = tc.search(s); // thay the bang swing
-				 System.out.println("Tim 17: " + r);
+			//	 System.out.println("Tim : " + r);
 				if (r == true) {
 					for (Customer ik : item) {
 						if (ik.getCcode().equals(s)) { // thay the bang
@@ -171,10 +171,10 @@ public class ModulCus {
 					}
 					itemSearch.add(fs);
 				}
-				 System.out.println("Tim 17: " + r);
+				// System.out.println("Tim : " + r);
 			}
 			SwingShowCus.showaftersort(itemSearch);
-			System.out.println(itemSearch);
+			//System.out.println(itemSearch);
 		}
 	
 		 
@@ -207,7 +207,7 @@ public class ModulCus {
 
 					if (string.equals(ik.ccode)) {
 						f = ik;
-						System.out.println("delete by code " + f);
+				//		System.out.println("delete by code " + f);
 					}
 
 				}
@@ -223,7 +223,7 @@ public class ModulCus {
 
 					if (string.equals(ik.ccode)) {
 						f = ik;
-						System.out.println("delete by code items " + f);
+						//System.out.println("delete by code items " + f);
 
 					}
 
@@ -235,9 +235,7 @@ public class ModulCus {
 			item = itemdecode;
 		}
 
-		for (Customer string : item) {
-			System.out.println("sau khi xoa: " + string);
-		}
+	
 		SwingShowCus.showaftersort(item);
 	}
 
@@ -245,18 +243,18 @@ public class ModulCus {
 	public void sortByPcode() {
 		if (item.isEmpty()) {
 			for (Customer Customer : items) {
-				System.out.println("dung chay vao day");
+				//System.out.println("dung chay vao day");
 				tc.addMany(Customer.ccode);
 			}
 		} else if (!item.isEmpty()) {
 			
 			for (Customer Customer : item) {
-				System.out.println("Chay vao sortbycode : " + Customer);
+			//	System.out.println("Chay vao sortbycode : " + Customer);
 				tc.addMany(Customer.ccode);
 			}
 		}
 
-		System.out.println("day la sort");
+		//System.out.println("day la sort");
 		tc.collect(new TreeSet<String>());
 
 	}
@@ -272,8 +270,7 @@ public class ModulCus {
 					for (Customer Customer : items) {
 						
 						if (Customer.ccode.equals(string)) {
-							System.out.println("among get sort : " + Customer.ccode);
-							System.out.println("among get sort : " + string);
+							
 							f = Customer;
 							 break;
 
@@ -282,16 +279,14 @@ public class ModulCus {
 					}
 					itemSearch.add(f);
 				}
-				for (Customer pd : itemSearch) {
-					System.out.println("sau khi sort cua items :" + pd);
-				}
+				
 			} else if (!item.isEmpty()) {
 				for (Object string : list) {
 					
 					for (Customer Customer : item) {
 
 						if (string.equals(Customer.ccode)) {
-							System.out.println("strong sort cua item :" + string);
+							
 							f = Customer;
 							 break;
 							
@@ -300,9 +295,7 @@ public class ModulCus {
 					}
 					 itemSearch.add(f);
 				}
-				for (Customer pd : itemSearch) {
-					System.out.println("sau khi sort cua item :" + pd);
-				}
+			
 			}
 		}
 		SwingShowCus.showaftersort(itemSearch);

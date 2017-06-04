@@ -32,7 +32,7 @@ public class ModulOrder {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("sai o day");
+			
 		}
 	}
 
@@ -44,10 +44,6 @@ public class ModulOrder {
 		fds.pcode = name;
 		fds.quantity = quality;
 		items.add(fds);
-
-		for (Ordering Ordering : item) {
-			System.out.println("kt inside add rong" + Ordering);
-		}
 
 		SwingShowOrder.showaftersort(items);
 
@@ -117,8 +113,7 @@ public class ModulOrder {
 
 					if (O.pcode.equals(string)) {
 						f = O;
-						System.out.println("kiem tra item : " + string);
-
+					
 					}
 
 				}
