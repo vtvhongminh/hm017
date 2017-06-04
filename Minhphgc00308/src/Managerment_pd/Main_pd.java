@@ -19,7 +19,7 @@ public class Main_pd {
 
 	public static void runproduct() {
 		ModulProduct m = new ModulProduct();
-		m.dataFile = Res.getDesktopFile("dsa2017-data/1e2/products.json");
+		m.dataFile = Res.getDesktopFile("dsa2017-data/1e5/products.json");
 		m.inputData();
 		// m.removeByNote("PRDAAAAAB");
 		// m.removeByAfNode("PRDAAAAAA");
@@ -32,7 +32,7 @@ public class Main_pd {
 	}
 	public static void runcus() {
 		ModulCus mc= new ModulCus();
-		mc.dataFile = Res.getDesktopFile("dsa2017-data/1e2/customers.json");
+		mc.dataFile = Res.getDesktopFile("dsa2017-data/1e5/customers.json");
 		mc.inputData();
 	
 
@@ -41,7 +41,7 @@ public class Main_pd {
 	}
 	public static void runorder() {
 		ModulOrder mc = new ModulOrder();
-		mc.dataFile = Res.getDesktopFile("dsa2017-data/1e2/orders.json");
+		mc.dataFile = Res.getDesktopFile("dsa2017-data/1e5/orders.json");
 		mc.inputData();
 
 

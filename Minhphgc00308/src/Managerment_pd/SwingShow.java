@@ -62,7 +62,7 @@ public class SwingShow {
 	
 		/////////
 		for (Product p : x) {
-			model.addRow(new Object[] { p.pcode, p.pro_name, p.price, p.pro_image_url });
+			model.addRow(new Object[] { p.pcode, p.pro_name, p.price,p.sale,p.quantity, p.pro_image_url });
 		}
 		model.fireTableDataChanged();
 		pn = new JPanel();
@@ -255,9 +255,9 @@ public class SwingShow {
 	}
 	public static void showaftersort(List<Product> tt){
 		model.setRowCount(0);
-		for (Product ps : tt) {
-			System.out.println("ben swing : " + ps);
-			model.addRow(new Object[] { ps.pcode, ps.pro_name, ps.price, ps.pro_image_url });
+		for (Product p : tt) {
+			
+			model.addRow(new Object[] { p.pcode, p.pro_name, p.price,p.sale,p.quantity, p.pro_image_url });
 		}
 	}
 
